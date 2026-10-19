@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Order — WashWise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand"><span class="dot"></span>WashWise</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tracking.html" class="active">Track Order</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h1>Track Your Laundry.</h1>
+      <p class="section-sub">Enter your order number to check the status of a sample demonstration order. This is not a real-time connection to a laundry shop.</p>
+      <div class="card">
+        <div class="form-group">
+          <label for="orderNumber">Order Number</label>
+          <input type="text" id="orderNumber" placeholder="e.g. WW1001">
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+          <button id="searchBtn" class="btn" type="button">Search</button>
+          <button id="clearBtn" class="btn btn-secondary" type="button">Clear</button>
+        </div>
+        <div id="orderResult" class="mt-1"></div>
+      </div>
+      <p class="price-note">Sample demonstration orders only. Order numbers and dates are not real customer records.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>WashWise</h3>
+        <p>Your Laundry, Our Care. Track It with Ease.</p>
+        <p>Sample contact: (0917) 123-4567 · sample@washwise.test</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tracking.html">Track Order</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2026 WashWise — IT105 student project prototype.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

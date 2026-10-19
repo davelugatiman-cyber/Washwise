@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Pickup Request — WashWise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand"><span class="dot"></span>WashWise</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="tracking.html">Track Order</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h1>Contact and Pickup Request</h1>
+      <div class="card">
+        <h2>Sample Business Contact</h2>
+        <p>Phone: (0917) 123-4567 (sample)</p>
+        <p>Email: sample@washwise.test (sample)</p>
+        <p>Address: 123 Sample Street, Sample City (sample)</p>
+        <p class="price-note">This prototype does not automatically send requests to a real business. A backend or connected form service would be required for real delivery.</p>
+      </div>
+
+      <div class="card">
+        <h2>Pickup Request Form</h2>
+        <form id="pickupForm" novalidate>
+          <div class="form-group">
+            <label for="custName">Customer Name *</label>
+            <input type="text" id="custName" required>
+          </div>
+          <div class="form-group">
+            <label for="custPhone">Contact Number * (09XXXXXXXXX or +639XXXXXXXXX)</label>
+            <input type="tel" id="custPhone" required>
+          </div>
+          <div class="form-group">
+            <label for="custAddress">Pickup Address *</label>
+            <input type="text" id="custAddress" required>
+          </div>
+          <div class="form-group">
+            <label for="pickupDate">Preferred Pickup Date *</label>
+            <input type="date" id="pickupDate" required>
+          </div>
+          <div class="form-group">
+            <label for="pickupService">Laundry Service *</label>
+            <select id="pickupService" required>
+              <option value="">-- Select a service --</option>
+              <option value="Wash and Fold">Wash and Fold</option>
+              <option value="Wash, Dry, and Fold">Wash, Dry, and Fold</option>
+              <option value="Comforter Cleaning">Comforter Cleaning</option>
+              <option value="Express Service">Express Service</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pickupQty">Estimated Quantity * (kg or items)</label>
+            <input type="number" id="pickupQty" min="0.1" step="0.1" required>
+          </div>
+          <div class="form-group">
+            <label for="pickupNotes">Additional Instructions (optional)</label>
+            <textarea id="pickupNotes"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Pickup Request</button>
+          <div id="formMsg" class="mt-1"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>WashWise</h3>
+        <p>Your Laundry, Our Care. Track It with Ease.</p>
+        <p>Sample contact: (0917) 123-4567 · sample@washwise.test</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tracking.html">Track Order</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2026 WashWise — IT105 student project prototype.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
